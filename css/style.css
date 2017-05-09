@@ -116,6 +116,14 @@ ul li {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+	text-align: left;
+}
+
+ul.todo-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 30px;
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
@@ -132,16 +140,20 @@ ul li:hover {
 ul li.checked {
   background: #888;
   color: #fff;
-  text-decoration: line-through;
+
+}
+
+ul li.checked .text{
+	text-decoration: line-through;
 }
 
 .actions{
   box-sizing: border-box;
   background-color: #5089AC;
   width: 100%;
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;*/
   padding: 5px 0;
 }
 
@@ -162,6 +174,16 @@ ul li.checked {
   color: #fff;
 }
 
+.gallery {
+	background-color: #5089AC;
+	width: 100%;
+	border-top: 1px solid #ccc;
+}
+
+.giphy-img {
+	background-color: #5089AC;
+}
+
 .photo-gif {
   width: 200px;
   height: 200px;
@@ -174,6 +196,16 @@ ul li.checked {
   padding: 5px;
   color: #666;
   background-color: white;
+}
+
+.delete {
+	/*font-weight: bold;*/
+	color: #444;
+	border: 1px solid #999;
+	border-radius: 5px;
+	padding: 5px 10px;
+	justify-content: center;
+	font-size: 18px;
 }
 
 .red {
