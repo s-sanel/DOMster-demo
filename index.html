@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DOMster</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./lib/domster.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./lib/todo.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="actions">
+        <button class="action" type="button" name="button" onclick="checkAllTodos()">Check all Todos</button>
+        <button class="action" type="button" name="button" onclick="uncheckAllTodos()">Uncheck all Todos</button>
+        <button class="action" type="button" name="button" onclick="toggleAllTodos()">Toggle all Todos</button>
+        <button class="action" type="button" name="button" onclick="clearTheList()">Clear the list</button>
+        <button class="action" type="button" name="button" onclick="addDeleteToItems()">Add delete Event</button>
+        <button class="action" type="button" name="button" onclick="addClickToItems()">Add Check Event</button>
+      </div>
+      <header class="header">
+        <h1 id="on">DOMster Todo</h1>
+        <div class="add-todo">
+          <input type="text" id="input-todo" class="todo-input" placeholder="Title...">
+          <button onclick="addNewItem()" class="add-btn">Add</buton>
+        </div>
+      </header>
+
+      <section class="main-content">
+        <ul class="todo-list">
+          <li>Hit the gym</li>
+          <li>Pay bills</li>
+          <li>Meet George</li>
+          <li>Buy eggs</li>
+          <li>Read a book</li>
+          <li>Organize ofssssfice</li>
+        </ul>
+      </section>
+
+      <div class="photo-gallery">
+        <h2>Add Giphy Photo</h2>
+        <label for="">Find by tag: </label>
+        <input type="text" name="" value="" class="tag-photo">
+        <input type="submit" class="find-btn" onclick="fetchPhoto()" value="Add photo">
+      </div>
+      <div class="gallery">
+        <div></div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
