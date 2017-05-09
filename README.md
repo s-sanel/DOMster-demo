@@ -1,3 +1,5 @@
 # Todo App
 
-Todo using DOMster library.
+[Live demo][DOMster]
+
+[DOMster]: http://sanel-selmanovic.us/DOMster-demo/
